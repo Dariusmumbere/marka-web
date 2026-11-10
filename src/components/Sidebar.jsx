@@ -16,6 +16,10 @@ export default function Sidebar({ exams, sel, form, setForm, onCreate, onSelect 
           <small>{[x.subject, x.class_name].filter(Boolean).join(" · ")}{x.script_count ? ` · ${x.script_count} marked` : ""}</small>
         </button>
       ))}
+      <footer className="credit">
+        <span>Developed by</span>
+        <b>Darius Mumbere</b>
+      </footer>
     </aside>
   );
 }
